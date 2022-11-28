@@ -1,15 +1,14 @@
 <template>
-  <PrimeiroComponente />
+  <div>
+    <h1>Ola Vue!</h1>
+  </div>
 </template>
 
 <script>
 import { defineComponent } from "vue";
-import PrimeiroComponente from "./components/PrimeiroComponente.vue";
+
 export default defineComponent({
-  name: "App",
-  components: {
-    PrimeiroComponente,
-  },
+  name: "PrimeiroComponente",
 });
 </script>
 
