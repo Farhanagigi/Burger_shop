@@ -1,0 +1,15 @@
+<template>
+  <div>
+    <input type="text" />
+  </div>
+</template>
+
+<script>
+import { defineComponent } from "@vue/runtime-core";
+
+export default defineComponent({
+  name: "InputText",
+});
+</script>
+
+<style lang="scss" scoped></style>
