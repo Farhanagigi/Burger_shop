@@ -18,11 +18,18 @@ export default defineComponent({
     setTimeout(() => {
       this.name = "Farhan";
     }, 1000);
+    this.lifecycle();
   },
   mounted() {
     setTimeout(() => {
       this.name = "Pedro";
     }, 3000);
+    this.lifecycle();
+  },
+  methods: {
+    lifecycle() {
+      console.log("Executou");
+    },
   },
 });
 </script>

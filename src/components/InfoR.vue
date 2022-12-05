@@ -8,6 +8,10 @@
       <li>Java</li>
       <li>Vue</li>
     </ul>
+
+    <div>
+      <button @click="showEmail">{{ textoBotao }}</button>
+    </div>
     <p v-show="mostrar_email">Mande uma mensagem para : {{ name }}</p>
     <p>
       Para acessar o meu portfolio
@@ -29,10 +33,21 @@ export default defineComponent({
   data() {
     return {
       esta_trabalhando: true,
-      mostrar_email: true,
+      mostrar_email: false,
       name: "Farhan@email.com",
       meu_link: "https://www.google.com",
+      textoBotao: "Mostrar Email",
     };
+  },
+  methods: {
+    showEmail() {
+      this.mostrar_email = !this.mostrar_email;
+      if (!this.mostrar_email) {
+        this.textoBotao = "Mostrar Email";
+      } else {
+        this.textoBotao = "Esconder Email";
+      }
+    },
   },
 });
 </script>
