@@ -9,19 +9,29 @@
       <li>Vue</li>
     </ul>
     <p v-show="mostrar_email">Mande uma mensagem para : {{ name }}</p>
+    <p>
+      Para acessar o meu portfolio
+      <a v-bind:href="meu_link" target="_blank">basta clicar aqui</a>
+    </p>
+    <PictureAvatar />
   </div>
 </template>
 
 <script>
 import { defineComponent } from "vue";
+import PictureAvatar from "./PictureAvatar.vue";
 
 export default defineComponent({
   name: "InfoR",
+  components: {
+    PictureAvatar,
+  },
   data() {
     return {
       esta_trabalhando: true,
       mostrar_email: true,
       name: "Farhan@email.com",
+      meu_link: "https://www.google.com",
     };
   },
 });
