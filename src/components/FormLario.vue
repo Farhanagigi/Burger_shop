@@ -43,8 +43,8 @@ export default defineComponent({
       const name = this.name;
       const email = this.email;
 
-      console.log("Nome: " + this.name);
-      console.log("Email: " + this.email);
+      console.log("Nome: " + name);
+      console.log("Email: " + email);
       console.log("Formulario Enviado!");
 
       //AJAX
