@@ -1,7 +1,7 @@
 <template>
   <div>
     <h2>Esta é a descricao da pessoa: {{ name }}</h2>
-    <InfoR />
+    <InfoR name="Farhan@email.com" />
 
     <FormLario />
   </div>

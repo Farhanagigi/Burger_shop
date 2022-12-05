@@ -37,11 +37,13 @@ export default defineComponent({
   components: {
     PictureAvatar,
   },
+  props: {
+    name: String,
+  },
   data() {
     return {
       esta_trabalhando: true,
       mostrar_email: false,
-      name: "Farhan@email.com",
       meu_link: "https://www.google.com",
       textoBotao: "Mostrar Email",
       backend_technologies: ["Javascript", "Java", "Postgrey"],
